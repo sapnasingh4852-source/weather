@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Weather</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="weather.css">
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+
+
+<section class="container">
+
+	<div class="header">
+		<form class="search">
+			<i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i>
+			<input type="text" placeholder="Search your city..."> <button class="dd">Search</button>
+		</form>
+	</div>
+
+
+	<main>
+		<h1 class="city"></h1>
+		<div class="data">
+			<button class="cloud"></button>
+			<div class="icon"></div>
+		</div>
+		<p class="temp"></p>
+		<div class="minmax">
+			<p class="min"></p>
+			<p class="max"></p>
+		</div>
+	</main>
+
+<div class="extra">
+	<div class="card">
+	<i class="fa-solid fa-temperature-high fa-xl" style="color: #000000;"></i>
+	<div>
+			<p>Feels Like</p>
+			<p class="feels">15&#176</p>
+		</div>
+	</div>
+
+
+<div class="card">
+			<i class="fa-solid fa-droplet fa-xl" style="color: #000000;"></i>
+	<div>
+			<p>Humidity</p>
+			<p class="humidity">15%</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<i class="fa-solid fa-wind fa-xl" style="color: #000000;"></i>
+		<div>
+			<p>Wind</p>
+			<p class="wind">15 m/s</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<i class="fa-solid fa-gauge-high fa-xl" style="color: #000000;"></i>
+		<div>
+			<p>Pressure</p>
+			<p class="pressure">15 hPa</p>
+		</div>
+	</div>
+
+</div>
+
+</section>
+
+<script src="weather.js"></script>
+</body>
+</html>
